@@ -267,7 +267,7 @@ def addPasswordWindow(key):
 # Run appropriate starting window
 
 if not os.path.isfile("data/logindata"):
-    if (os.path.isfile("data/passwords")):
+    if (os.path.exists("data/passwords")):
         os.remove("data/passwords")
     createUserWindow()
 else:
